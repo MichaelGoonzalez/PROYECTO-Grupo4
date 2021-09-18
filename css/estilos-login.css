@@ -19,6 +19,40 @@ body {
     color: white;
     text-decoration: none;
 }
+.contenedor{
+    margin: 100px auto;
+    width: 25%;
+}
+.contenedor h1{
+    
+    margin: 20 0 20px;
+    padding: 0 0 13px;
+    font-size: 30px;
+    color: #f6821f;
+    text-align: center;
+}
+.contenedor .element{
+    margin-top: 20px;
+}
+.contenedor .element .label{
+    margin-bottom: 5px;
+}
+.contenedor .element input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contenedor .btn{
+    width: 80%;
+    text-align: center;
+    background-color:#4160af;
+    border: 2px solid #123488;
+    color: white;
+    padding: 10px;
+    margin: 5px auto;
+    cursor: pointer;
+   
+}
 /*flexbox*/
 .logo-nav-container{
     display: flex;
@@ -39,6 +73,7 @@ body {
     transition: all0.4s linear;
     border-radius: 5px;
 }
-.navigation ul li a:hover{
-    background: #ccc;
+.navigation ul li a:hover a:active{
+    border-bottom: #ccc;
 }
+
