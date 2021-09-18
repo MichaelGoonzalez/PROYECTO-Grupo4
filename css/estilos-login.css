@@ -48,6 +48,7 @@ body {
 .contenedor{
     margin: 100px auto;
     width: 25%;
+    text-align: center;
 }
 .contenedor h1{
     
@@ -62,14 +63,16 @@ body {
 }
 .contenedor .element .label{
     margin-bottom: 5px;
+    text-align: left;
 }
 .contenedor .element input{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
+    border: 0.5px #cdc solid;
 }
 .contenedor .btn{
-    width: 80%;
+    width: 60%;
     text-align: center;
     background-color:#4160af;
     border: 2px solid #123488;
@@ -77,4 +80,5 @@ body {
     padding: 10px;
     margin: 5px auto;
     cursor: pointer;
+    border-radius: 5px;
 }
