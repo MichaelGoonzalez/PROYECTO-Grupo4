@@ -1,0 +1,44 @@
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0%;
+}
+.container{
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container img{
+    width: 30%;
+}
+.header{
+    background: #000;
+    color: white;
+    padding: 0.5rem 0;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+/*flexbox*/
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all0.4s linear;
+    border-radius: 5px;
+}
+.navigation ul li a:hover{
+    background: #ccc;
+}
