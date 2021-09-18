@@ -2,6 +2,7 @@ body {
     font-family: 'roboto', sans-serif;
     margin: 0%;
 }
+/*header*/
 .container{
     width: 85%;
     max-width: 1000px;
@@ -19,6 +20,31 @@ body {
     color: white;
     text-decoration: none;
 }
+/*flexbox*/
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all0.4s linear;
+    border-radius: 5px;
+}
+.navigation ul li a:hover a:active{
+    border-bottom: #ccc;
+}
+
+/*formulario*/
 .contenedor{
     margin: 100px auto;
     width: 25%;
@@ -51,29 +77,4 @@ body {
     padding: 10px;
     margin: 5px auto;
     cursor: pointer;
-   
 }
-/*flexbox*/
-.logo-nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navigation ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.navigation ul li{
-    display: inline-block;
-}
-.navigation ul li a{
-    display: block;
-    padding: 0.5rem 1rem;
-    transition: all0.4s linear;
-    border-radius: 5px;
-}
-.navigation ul li a:hover a:active{
-    border-bottom: #ccc;
-}
-
