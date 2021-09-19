@@ -18,8 +18,6 @@
 </head>
 
 <body class="d-flex h-100 text-center text-white">
-    <div class="bg-black bg-opacity-50 bg-cover bg-filter"></div>   
-    <div class="bg-cover" style="background-image: url(/img/background.jpeg);"></div> 
     <div class="d-flex w-100 h-100  mx-auto flex-column">
         <header class="mb-auto">
             <nav class="navbar navbar-expand-lg navbar-dark bg-black">
@@ -59,25 +57,19 @@
             </nav>
         </header>
 
-        <main class="container">
-            <section class="row d-flex justify-content-evenly">
-                <div class="col-lg-4 my-auto">
-                    <h1 class="color-marca">Carvajal Materiales</h1>
-                    <p class="lead">
-                        ¡Bienvenidos! Carvajal Materiales te provee 
-                        materiales de construcción para que cumplas tus 
-                        proyectos de remodelación para tu hogar y productos de 
-                        ferretería en general.
-                        Ven a conocernos  y contruYAmos juntos!!
-
-                    </p>                
-                    <a href="productos.html" class="btn btn-primary">Ver productos</a>
-                </div>
-                <div class="col-4 my-auto d-none d-lg-block">
-                    <img src="/img/imgIndex.png" width="100%" alt="imagen">
-                </div>
-            </section>
-        </main>
+        <main>
+            <form>
+                <label for="asunto">Asunto</label><br/>
+                <input type="text" id="asunto" placeholder="Escribe el asunto..."/><br/>
+    
+                <label for="correo">Correo</label><br/>
+                <input type="email" id="correo" placeholder="Escribe tu correo..."/><br/>
+    
+                <label for="mensaje">Mensaje</label><br/>
+                <textarea id="comment" name="comment" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea><br/>
+    
+                <input type="submit" value="Enviar"/>
+            </form>
 
         <footer class="footer mt-auto text-white bg-black p-3">
             <div class="container-fluid">
