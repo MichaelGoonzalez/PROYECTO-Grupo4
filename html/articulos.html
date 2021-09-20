@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carvajal Materiales - Nosotros</title>
+    <title>Carvajal Materiales - Atículos</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    <script type="text/javascript" src="../js/bootstrap.js" defer></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.js" defer></script>
     <script src="https://kit.fontawesome.com/ceaed3209e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,7 +45,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active color-marca" aria-current="page"
-                                    href="articulos.html">Articulos</a>
+                                        href="articulos.html">Articulos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contacto.html">Contacto</a>
@@ -57,117 +57,511 @@
             </nav>
         </header>
 
-        <main class="container">
-            <section id="menu-articulos">
-                <nav>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Todos</a></li>
-                            <li><a href="#">Tutorisles</a></li>
-                            <li><a href="#">Review</a></li>
-                            <li><a href="#">Noticias</a></li>
-                            <li>
-                                <a href="#">Más categorías
-                                    <ul>
-                                        <li>Opción 1</li>
-                                        <li>Opción 2</li>
-                                        <li>Opción 3</li>
-                                    </ul>
-                                </a>
-                            </li>
-                        </ul>
-                        <form method=GET action="Búsqueda">
+        <main class="container my-5">
+            <div class="row">
+                <section class="col-md-10 mx-auto">
+                    <ul class="nav nav-tabs nav-tabsp nav-fill" id="productos" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="todos-tab" data-bs-toggle="tab" data-bs-target="#todos"
+                                type="button" role="tab" aria-controls="todos" aria-selected="true">Todos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tutoriales-tab" data-bs-toggle="tab" data-bs-target="#tutoriales"
+                                type="button" role="tab" aria-controls="tutoriales" aria-selected="true">Tutoriales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review"
+                                type="button" role="tab" aria-controls="review" aria-selected="true">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="noticias-tab" data-bs-toggle="tab" data-bs-target="#noticias"
+                                type="button" role="tab" aria-controls="noticias" aria-selected="true">Noticias</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="dropdown-categorias" data-bs-toggle="dropdown"
+                                href="#" role="button" aria-expanded="false">Más categorías</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-categorias">
+                                <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                                <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                                <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <form class="d-flex justify-content-end mx-auto">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
+                            </form>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="tab-content" id="productos">
+                <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todos-tab">
+                    <section class="row">
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="tutoriales" role="tabpanel" aria-labelledby="tutoriales-tab">
+                    <section class="row">
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                    <section class="row">
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="noticias" role="tabpanel" aria-labelledby="noticias-tab">
+                    <section class="row">
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="card m-auto shadow" style="width: 400px;">
+                                <img src="/img/tutorial.png" class="card-img-top" alt="Imagen articulo">
+                                <div class="card-body border-top text-start">
+                                    <h6 class="card-title color-marca">Tutorial</h6>                                    
+                                    <h5 class="card-title text-black">¿Cómo ajustar los muebles adecuadamente?</h5>
+                                    <p class="card-text text-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae laborum qui vero dignissimos 
+                                        provident, fuga cum illum eos voluptate rerum, est ipsam eum nesciunt? Sequi explicabo ipsam illum 
+                                        laborum culpa! <a href="#" class="text-danger">Leer más ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-                            <input type=text id="buscar" name="buscar" value="" size="50" placeholder="Buscar" />
-                        </form>
-                    </nav>
-            </section>
-            <section>
-                <article class="articulo">
-                    <img src="https://img.freepik.com/foto-gratis/instalacion-mecanismo-elevacion-resorte-cama-compartimento-almacenamiento-al-ensamblar-muebles-paquete-plano_351981-2539.jpg?size=626&ext=jpg"
-                        width="300px" />
-                    <h3>Tutoriales</h3>
-                    <h3>¿Cómo ajustar los muebles adecuadamente?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repudiandae modi, aperiam
-                        sapiente quisquam, est nulla vero vel, minima accusamus quam? Magnam error laudantium suscipit
-                        quibusdam adipisci sunt consectetur quas.
-
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet eligendi, tempore
-                        reiciendis neque deleniti voluptas possimus itaque rerum vitae dolor eveniet dicta aperiam
-                        perspiciatis magnam cupiditate! Tempore, accusamus delectus!
-                    </p>
-                </article>
-                <article class="articulo">
-                    <img src="https://img.freepik.com/foto-gratis/instalacion-mecanismo-elevacion-resorte-cama-compartimento-almacenamiento-al-ensamblar-muebles-paquete-plano_351981-2539.jpg?size=626&ext=jpg"
-                        width="300px" />
-                    <h3>Tutoriales</h3>
-                    <h3>¿Cómo ajustar los muebles adecuadamente?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repudiandae modi, aperiam
-                        sapiente quisquam, est nulla vero vel, minima accusamus quam? Magnam error laudantium suscipit
-                        quibusdam adipisci sunt consectetur quas.
-
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet eligendi, tempore
-                        reiciendis neque deleniti voluptas possimus itaque rerum vitae dolor eveniet dicta aperiam
-                        perspiciatis magnam cupiditate! Tempore, accusamus delectus!
-                    </p>
-                </article>
-                <article class="articulo">
-                    <img src="https://img.freepik.com/foto-gratis/instalacion-mecanismo-elevacion-resorte-cama-compartimento-almacenamiento-al-ensamblar-muebles-paquete-plano_351981-2539.jpg?size=626&ext=jpg"
-                        width="300px" />
-                    <h3>Tutoriales</h3>
-                    <h3>¿Cómo ajustar los muebles adecuadamente?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repudiandae modi, aperiam
-                        sapiente quisquam, est nulla vero vel, minima accusamus quam? Magnam error laudantium suscipit
-                        quibusdam adipisci sunt consectetur quas.
-
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet eligendi, tempore
-                        reiciendis neque deleniti voluptas possimus itaque rerum vitae dolor eveniet dicta aperiam
-                        perspiciatis magnam cupiditate! Tempore, accusamus delectus!
-                    </p>
-                </article>
-                <article class="articulo">
-                    <img src="https://img.freepik.com/foto-gratis/instalacion-mecanismo-elevacion-resorte-cama-compartimento-almacenamiento-al-ensamblar-muebles-paquete-plano_351981-2539.jpg?size=626&ext=jpg"
-                        width="300px" />
-                    <h3>Tutoriales</h3>
-                    <h3>¿Cómo ajustar los muebles adecuadamente?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repudiandae modi, aperiam
-                        sapiente quisquam, est nulla vero vel, minima accusamus quam? Magnam error laudantium suscipit
-                        quibusdam adipisci sunt consectetur quas.
-
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet eligendi, tempore
-                        reiciendis neque deleniti voluptas possimus itaque rerum vitae dolor eveniet dicta aperiam
-                        perspiciatis magnam cupiditate! Tempore, accusamus delectus!
-                    </p>
-                </article>
-                <article class="articulo">
-                    <img src="https://img.freepik.com/foto-gratis/instalacion-mecanismo-elevacion-resorte-cama-compartimento-almacenamiento-al-ensamblar-muebles-paquete-plano_351981-2539.jpg?size=626&ext=jpg"
-                        width="300px" />
-                    <h3>Tutoriales</h3>
-                    <h3>¿Cómo ajustar los muebles adecuadamente?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repudiandae modi, aperiam
-                        sapiente quisquam, est nulla vero vel, minima accusamus quam? Magnam error laudantium suscipit
-                        quibusdam adipisci sunt consectetur quas.
-
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet eligendi, tempore
-                        reiciendis neque deleniti voluptas possimus itaque rerum vitae dolor eveniet dicta aperiam
-                        perspiciatis magnam cupiditate! Tempore, accusamus delectus!
-                    </p>
-                </article>
-                <article class="articulo">
-                    <img src="https://img.freepik.com/foto-gratis/instalacion-mecanismo-elevacion-resorte-cama-compartimento-almacenamiento-al-ensamblar-muebles-paquete-plano_351981-2539.jpg?size=626&ext=jpg"
-                        width="300px" />
-                    <h3>Tutoriales</h3>
-                    <h3>¿Cómo ajustar los muebles adecuadamente?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repudiandae modi, aperiam
-                        sapiente quisquam, est nulla vero vel, minima accusamus quam? Magnam error laudantium suscipit
-                        quibusdam adipisci sunt consectetur quas.
-
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet eligendi, tempore
-                        reiciendis neque deleniti voluptas possimus itaque rerum vitae dolor eveniet dicta aperiam
-                        perspiciatis magnam cupiditate! Tempore, accusamus delectus!
-                    </p>
-                </article>
-            </section>
         </main>
 
         <footer class="footer mt-auto text-white bg-black p-3">
