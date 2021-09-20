@@ -59,3 +59,81 @@
 .color-marca{  
   color: #f6821f !important;
 }
+/*formulario login*/
+.contenedor{
+  margin: 100px auto;
+  width: 25%;
+  text-align: center;
+}
+.contenedor h1{
+  
+  margin: 20 0 20px;
+  padding: 0 0 13px;
+  font-size: 30px;
+  color: #f6821f;
+  text-align: center;
+}
+.contenedor .element{
+  margin-top: 20px;
+}
+.contenedor .element .label{
+  margin-bottom: 5px;
+  text-align: left;
+  color: black;
+}
+.contenedor .element input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.5px #cdc solid;
+}
+
+/*Formulario contacto*/
+.contacto{
+  margin: 50px auto;
+  width: 40%;
+  text-align: center;
+  display:inline-block;
+}
+.contacto h2{
+  
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: #f6821f;
+  text-align: center;
+}
+.contacto .element{
+  margin: 10px;
+  font-size: 15px;
+}
+.contacto .element .label{
+  margin-bottom: 5px;
+  text-align: left;
+  color: black;
+}
+.contacto .element input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.5px #cdc solid;
+}
+.contacto .element textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.5px #cdc solid;
+}
+#info{
+  margin-left: 30px;
+  float: left;
+}
+
+#info h2{
+  
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: #f6821f;
+  text-align: center;
+}
