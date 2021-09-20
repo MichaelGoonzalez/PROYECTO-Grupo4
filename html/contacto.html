@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="d-flex h-100 text-center text-white">
+<body class="d-flex h-100 text-center text-black">
     <div class="d-flex w-100 h-100  mx-auto flex-column">
         <header class="mb-auto">
             <nav class="navbar navbar-expand-lg navbar-dark bg-black">
@@ -35,8 +35,7 @@
                         <div class="d-flex">
                             <ul class="navbar-nav nav-masthead me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active color-marca" aria-current="page"
-                                        href="/html/index.html">Inicio</a>
+                                    <a class="nav-link" href="/html/index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -45,10 +44,10 @@
                                     <a class="nav-link" href="productos.html">Productos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="articulos.html">Articulos</a>
+                                    <a class="nav-link" href="articulos.html">Artículos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                    <a class="nav-link active color-marca" aria-current="page" href="contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -58,19 +57,44 @@
         </header>
 
         <main>
-            <form>
-                <label for="asunto">Asunto</label><br/>
-                <input type="text" id="asunto" placeholder="Escribe el asunto..."/><br/>
-    
-                <label for="correo">Correo</label><br/>
-                <input type="email" id="correo" placeholder="Escribe tu correo..."/><br/>
-    
-                <label for="mensaje">Mensaje</label><br/>
-                <textarea id="comment" name="comment" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea><br/>
-    
-                <input type="submit" value="Enviar"/>
-            </form>
-
+            <section class="row d-flex justify-content-evenly">
+                <div class="col-lg-6 my-auto">
+                    <form action="server" method="GET"></form>
+                        <div class="contacto">
+                            <h2>Contáctanos</h2>
+                            <div class="element">
+                                <div class="label"><label for="asunto">Asunto</label></div>
+                                <input type="text" id="asunto" name="asunto" placeholder="Escribe el asunto..." required="true"/>
+                            </div>
+                            <div class="element">
+                                <div class="label"><label for="email">Correo</label></div>
+                                <input type="email" id="email" name="email" placeholder="Escribe tu correo..." required="true"/>
+                            </div>
+                            <div class="element">        
+                                <div class="label"><label for="comment">Mensaje</label></div>
+                                <textarea id="comment" name="comment" rows="2" placeholder="Escribe tu mensaje aquí..." required="true"></textarea>
+                            </div>
+                
+                            <input class="btn btn-primary" type="submit" value="Enviar"/>
+                        </div>
+                    </form>
+                    <aside id="info">
+                        <article>
+                            <h2>Visítanos</h2>
+                            <p>CL 14D #43A-34 Manzanares I<br/>Poblado campestre, Candelaria<Br/>Cali, Colombia</p>
+                        </article>
+                        <article>
+                            <h2>Síguenos</h2>
+                            <div class=".mx-4">
+                                <a class="text-primary" href="https://www.facebook.com/Carvajalmateriales"><i class="fab fa-facebook" class="text-black">Facebook</i></a><br/>
+                                <a class="text-danger" href="https://www.instagram.com/carvajalmateriales/"><i class="fab fa-instagram">Instagram</i></a><br/>
+                                <a class="text-success" href="https://api.whatsapp.com/send?phone=%2B573003659340&fbclid=IwAR1Fs2TmR-vYJG0c8c1zhm4XzCFEJjWr2zbsaMjivUyG2SCrSoFVYx49qwA"><i class="fab fa-whatsapp"> Whatsapp</i></a><br/>
+                            </div>
+                        </article>
+                    </aside>
+                </div>
+            </section>
+        </main>
         <footer class="footer mt-auto text-white bg-black p-3">
             <div class="container-fluid">
                 <div class="d-lg-flex justify-content-lg-center">
@@ -81,9 +105,9 @@
                         &copy; Carvajal Materiales | Todos los derechos reservados.
                     </div>
                     <div class="mx-4">
-                        <a class="text-white" href="#"><i class="fab fa-facebook"></i></a>
-                        <a class="text-white" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="text-white" href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a class="text-white" href="https://www.facebook.com/Carvajalmateriales" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a class="text-white" href="https://www.instagram.com/carvajalmateriales/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="text-white" href="https://api.whatsapp.com/send?phone=%2B573003659340&fbclid=IwAR1Fs2TmR-vYJG0c8c1zhm4XzCFEJjWr2zbsaMjivUyG2SCrSoFVYx49qwA" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                     <div class="">
                         <a class="text-white text-decoration-none" href="login.html">Administrador</a>
