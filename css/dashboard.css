@@ -2,16 +2,18 @@ body {
     background: #f1f1f1;
 }
 
-.image{
+.image {
     width: 179px;
 }
+
 .barra {
-    background:#fff;
+    background: #f4f4f4;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 5px;
     margin: 0;
 }
+
 .barra2 {
     background: #000;
     padding-top: 3px;
@@ -22,9 +24,10 @@ body {
 
 
 .dropdown-menu {
-    margin: 17px;
+    margin: 5px;
     background: #252525;
-    color: white;
+    padding-left: 0px;
+    padding-right: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
 }
 
@@ -32,18 +35,18 @@ body {
     color: white;
 }
 
-.menuperfil:focus {
-    background: #23ae6b;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
-}
-
 .cerrar:hover {
-    background-color: rgba(206, 65, 22, 0.877);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+    background-color: #000;
+    color: orange;
 }
 
-.user {
-    font-size: 35px;
+.far {
+    font-size: 30px;
+    color: orange;
+}
+
+.far:hover {
+    color: black;
 }
 
 
@@ -70,7 +73,7 @@ body {
     padding: 10px;
     font-family: Roboto, sans-serif;
     font-weight: 500;
-    
+
 }
 
 .barra-lateral .menu a:hover {
@@ -95,14 +98,40 @@ body {
 /*MAIN*/
 
 .main {
-    padding-top: 40px;
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background: #fff;
 }
 
-.main .columna {
-    padding-left: 40px;
-    padding-right: 40px;
+/*crear usuario*/
+.contenedor h1 {
+    color: #f6821f;
+    font-size: 2.5rem;
 }
 
+.contenedor .element {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor .element .label {
+    margin-bottom: 0px;
+    text-align: left;
+    color: black;
+}
+
+.contenedor .element input {
+    width: 101%;
+    padding: 3px;
+    border-radius: 8px;
+    border: 1.5px #cdc solid;
+}
+.btn{
+    color: #cdc;
+    background: #4160af;
+    border-radius: 15px;
+}
 
 /*mediaquerys*/
 
@@ -110,15 +139,19 @@ body {
     .barra-lateral {
         min-width: auto;
     }
+
     .barra-lateral .menu a span {
         display: none;
     }
+
     .barra-lateral .menu a i {
         margin: 0;
     }
+
     .barra {
         min-width: auto;
     }
+
     .dropdown-menu {
         margin: 20px -79px 0px;
     }
@@ -128,16 +161,20 @@ body {
     .barra-lateral {
         min-height: auto;
     }
+
     .barra-lateral .menu a {
         display: inline-block;
         border-bottom: none;
     }
+
     .dropdown-menu {
         margin: 20px -78px 0px;
     }
+
     .logocppe {
         width: 100%;
     }
+
     body {
         background: #D3D3D3;
         font-size: 16px;
@@ -145,27 +182,21 @@ body {
     }
 }
 
-.formulariorecursos {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.568);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.menu {
-    border-top: 5px #fff solid;
-}
 
 @media screen and (max-width:575px) {
     .barra-lateral {
         height: auto;
     }
+
     .barra-lateral.menu a {
         display: inline-block;
         border-bottom: none;
     }
+
     .dropdown-menu {
         margin: 20px -78 0px;
     }
+
     body {
         font-size: 16px;
         overflow: visible;
