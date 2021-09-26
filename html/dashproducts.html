@@ -64,10 +64,24 @@
                                 <label for="precioProducto" class="form-label"> <b>Precio</b></label>
                                 <input type="number" class="form-control" id="precioProducto">
                               </div>
+                            <div class="mb-3">
+                                <label for="precioProducto" class="form-label"> <b>Cantidad a registrar</b></label>
+                                <input type="number" class="form-control" id="precioProducto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="precioProducto" class="form-label"> <b>Fecha de registro</b></label>
+                                <input type="date" class="form-control" id="precioProducto">
+                            </div>
+                            <div class="mb-3">
+                                    <label for="articulodescripcion" class="form-label"> <b>Descripcion Articulo</b></label>
+                                    <textarea class="form-control" id="articulodescripcion" rows="3"></textarea>
+                            </div>
+                            <br>
                             <div class="mb-3 form-check">
                               <input type="checkbox" class="form-check-input" id="exampleCheck1">
                               <label class="form-check-label" for="exampleCheck1">Confirmar</label>
                             </div>
+                            <br>
                             <button type="submit" class="btn btn-primary">Crear Producto</button>
                           </form>
                     </div>
@@ -84,9 +98,21 @@
                               <label for="codeproduct" class="form-label"> <b>Codigo Producto </b></label>
                               <input type="text" class="form-control" id="codeproduct">
                             </div>
-                           
+                           <br>
                             <button type="submit" class="btn btn-primary">Buscar Producto</button>
                           </form>
+                        <br>  
+                        <div class="mb-3">
+                            <table border="1" class="table table-active">
+                                <thead>
+                                    <tr>
+                                        <th>Codigo</th>
+                                        <th>Nombre Producto</th>
+                                        <th>Stock</th>
+                                    </tr>
+                                </thead>
+                            </table>    
+                        </div>  
                         <p></p>
                         <hr>
                         <h6>0001 Taladro</h6>
