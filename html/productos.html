@@ -96,99 +96,18 @@
                     </ul>
                 </section>
             </div>
-            <div class="tab-content" id="productos">
+            <div id="app" class="tab-content">
                 <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todos-tab">
                     <section class="row">
-                        <div class="col-3 mt-5">
+                        <div v-for="item in productosArray" class="col-3 mt-5">
                             <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
+                                <img v-bind:src="item.img" class="card-img-top" alt="Imagen producto">
                                 <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
+                                    <h5 class="card-title color-marca">{{item.nombreProducto}}</h5>
                                     <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
+                                        {{item.descripcionProducto}}
                                     </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
+                                    <h5 class="card-title text-black">{{item.precio}}</h5>
                                 </div>
                             </div>
                         </div>
@@ -196,96 +115,15 @@
                 </div>
                 <div class="tab-pane fade" id="materiales" role="tabpanel" aria-labelledby="materiales-tab">
                     <section class="row">
-                        <div class="col-3 mt-5">
+                        <div v-for="item in productosArray" class="col-3 mt-5">
                             <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
+                                <img v-bind:src="item.img" class="card-img-top" alt="Imagen producto">
                                 <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
+                                    <h5 class="card-title color-marca">{{item.nombreProducto}}</h5>
                                     <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
+                                        {{item.descripcionProducto}}
                                     </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
+                                    <h5 class="card-title text-black">{{item.precio}}</h5>
                                 </div>
                             </div>
                         </div>
@@ -293,96 +131,15 @@
                 </div>
                 <div class="tab-pane fade" id="electricos" role="tabpanel" aria-labelledby="electricos-tab">
                     <section class="row">
-                        <div class="col-3 mt-5">
+                        <div v-for="item in productosArray" class="col-3 mt-5">
                             <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
+                                <img v-bind:src="item.img" class="card-img-top" alt="Imagen producto">
                                 <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
+                                    <h5 class="card-title color-marca">{{item.nombreProducto}}</h5>
                                     <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
+                                        {{item.descripcionProducto}}
                                     </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
+                                    <h5 class="card-title text-black">{{item.precio}}</h5>
                                 </div>
                             </div>
                         </div>
@@ -390,103 +147,21 @@
                 </div>
                 <div class="tab-pane fade" id="maderas" role="tabpanel" aria-labelledby="maderas-tab">
                     <section class="row">
-                        <div class="col-3 mt-5">
+                        <div v-for="item in productosArray" class="col-3 mt-5">
                             <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
+                                <img v-bind:src="item.img" class="card-img-top" alt="Imagen producto">
                                 <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
+                                    <h5 class="card-title color-marca">{{item.nombreProducto}}</h5>
                                     <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
+                                        {{item.descripcionProducto}}
                                     </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div><div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 mt-5">
-                            <div class="card m-auto shadow" style="width: 200px;">
-                                <img src="/img/producto.png" class="card-img-top" alt="Imagen producto">
-                                <div class="card-body border-top text-start">
-                                    <h5 class="card-title color-marca">Taladro percutor</h5>
-                                    <p class="card-text text-black">
-                                        Taladro Percutor 1/2 pulg 650w 3150RPM 47250GPM
-                                    </p>
-                                    <h5 class="card-title text-black">$ 200.000</h5>
+                                    <h5 class="card-title text-black">{{item.precio}}</h5>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
-
         </main>
 
         <footer class="footer mt-auto text-white bg-black p-3">
@@ -510,6 +185,9 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
