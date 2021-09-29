@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carvajal Materiales - Nosotros</title>
+    <title>Carvajal Materiales - Contacto</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="d-flex h-100 text-center text-white">
+<body class="d-flex h-100 text-center text-black">
     <div class="d-flex w-100 h-100  mx-auto flex-column">
         <header class="mb-auto">
             <nav class="navbar navbar-expand-lg navbar-dark bg-black">
@@ -38,8 +38,7 @@
                                     <a class="nav-link" href="/html/index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active color-marca" aria-current="page"
-                                    href="nosotros.html">Nosotros</a>
+                                    <a class="nav-link" href="nosotros.html">Nosotros</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="productos.html">Productos</a>
@@ -48,10 +47,7 @@
                                     <a class="nav-link" href="articulos.html">Artículos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">Contacto</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="ingresar.html">Ingresar</a>
+                                    <a class="nav-link active color-marca" aria-current="page" href="contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -60,39 +56,26 @@
             </nav>
         </header>
 
-        <main class="container">
-            <section class="row d-flex justify-content-evenly text-black">
-                <div class="col-md-5 my-auto text-start">
-                    <h1 class="color-marca">¿Quiénes somos?</h1>
-                    <p class="lead">
-                        Somos una empresa dedicada a la distribución de productos eléctricos y de ferretería a los diferentes municipios 
-                        del Valle del Cauca, mediante el innovador y eficiente servicio; generando progreso y estabilidad a nuestros 
-                        colaboradores, ya que ellos hacen posible la existencia de nuestra empresa y  siendo así un aliado estratégico de 
-                        nuestros clientes a la hora de remodelar sus hogares.
-                    </p>
-                    <p class="lead">
-                        Nuestra compañía inicia un proceso comercial en la ciudad de candelaria, donde se vio  un gran potencial  por su 
-                        expansión gracias los nuevos proyectos de vivienda, actualmente buscamos  ser los mejores aliados de los propietarios 
-                        de las viviendas y ser partícipes en hacer cumplir los sueños de los clientes ofreciendo una gran variedad de productos 
-                        para la remodelación de sus hogares.
-                    </p>
-                </div>
-                <div class="col-md-5 my-auto text-start">
-                    <h2 class="color-marca">Misión</h2>
-                    <p class="lead">
-                        Ofrecer productos de calidad a nuestros clientes, contribuyendo a la mejora de sus viviendas y cumpliendo sus 
-                        sueños de remodelar su hogar.
-                    </p>
-                    <h2 class="color-marca">Visión</h2>
-                    <p class="lead">
-                        Ser reconocidos como una empresa responsable con sus clientes, que brinda buen servicio y ofrece productos de 
-                        calidad a nuestros clientes. Ser el mejor aliado del ferretero al proveer materiales de construcción y 
-                        productos de ferretería.
-                    </p>
+        <main class="container-fluid">
+            <section class="row d-flex justify-content-evenly">
+                <div class="col-12 col-lg-6 my-auto">
+                    <form action="server" method="GET">
+                        <div class="contacto">
+                            <h2>Iniciar sesión</h2>
+                            <div class="element">
+                                <div class="label"><label for="email">Correo</label></div>
+                                <input type="email" id="email" name="email" placeholder="Escribe tu correo..." required="true"/>
+                            </div>
+                            <div class="element">
+                            <div class="label"><label for="asunto">Contraseña</label></div>
+                            <input type="password" id="asunto" name="asunto" placeholder="Escribe tu Contraseña..." required="true"/>
+                        </div>
+                            <input class="btn btn-primary" type="submit" value="Enviar"/>
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>
-
         <footer class="footer mt-auto text-white bg-black p-3">
             <div class="container-fluid">
                 <div class="d-lg-flex justify-content-lg-center">
