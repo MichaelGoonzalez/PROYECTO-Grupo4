@@ -1,5 +1,16 @@
 const express = require('express');
-const Router = express.Router();
+const router = express.Router();
 
+const Task = require('../js/task');
 
-module.exports = Router;
+router.get('/', (req, res) => {
+    res.render('indeex');
+});
+
+router.post('/add', async(req, res) => {
+    const task = new Task(req.body);
+    await task.save();
+    res.send('recibido');
+});
+
+module.exports = router;

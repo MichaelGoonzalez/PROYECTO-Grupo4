@@ -2,15 +2,21 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan')
+const mongoose = require('mongoose');
+
 const app = express();
+//conecting to db
+mongoose.connect('mongodb://localhost/CRUD')
+.then(db => console.log('db connected'))
+.catch(err =>console.log(err));
 
 //import routes 
 const indexRoutes = require('../routes/index');
 
 //settings
 app.set('port', process.env.PORT || 3000);
-app.set('html', path.join(__dirname, 'html'));
-app.set('html engine', 'ejs');
+app.set('', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 //middlewares
 app.use(morgan('dev'));
