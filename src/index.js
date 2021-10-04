@@ -4,6 +4,8 @@ const morgan = require('morgan')
 const mongoose = require('mongoose');
 
 const app = express();
+
+//connecting to data database
 mongoose.connect('mongodb://localhost/database')
   .then(db => console.log('DB is connected'))
   .catch(err => console.error(err));
